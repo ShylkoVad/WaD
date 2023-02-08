@@ -8,6 +8,9 @@ public class urokIf {
         if (x < y) {
             System.out.println("Это оператор if");
         }
+        if (x < y && x > 5) {
+            System.out.println("Число находится в диапозоне от 5 до " + y);
+        }
 
     }
 }
