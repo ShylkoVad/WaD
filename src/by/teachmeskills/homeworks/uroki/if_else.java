@@ -10,5 +10,6 @@ public class if_else {
         else {
             System.out.println("Это оператор else");
         }
+        System.out.println(x < y ? "Это оператор if" : "Это оператор else");
     }
 }
