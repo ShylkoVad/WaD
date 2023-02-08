@@ -2,32 +2,32 @@ package by.teachmeskills.homeworks.uroki;
 
 public class switch_case {
     public static void main(String[] args) {
-        int num = 8;
+        int num = 1;
 
         switch (num) {
             case 1:
                 System.out.println("Сегодня понедельник");
-                break;
+//                break;
             case 2:
                 System.out.println("Сегодня вторник");
-                break;
+//                break;
             case 3:
                 System.out.println("Сегодня среда");
-                break;
+//                break;
             case 4:
                 System.out.println("Сегодня четверг");
-                break;
+//                break;
             case 5:
                 System.out.println("Сегодня пятница");
-                break;
+//                break;
             case 6:
                 System.out.println("Сегодня суббота");
-                break;
+//                break;
             case 7:
                 System.out.println("Сегодня воскресенье");
-                break;
+//                break;
             default:
-                System.out.println("Введено не верно значение недели");
+                System.out.println("Не корректно введено значение недели");
 
         }
     }
