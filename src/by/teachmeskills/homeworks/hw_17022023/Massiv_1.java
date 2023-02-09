@@ -7,6 +7,8 @@ public class Massiv_1 {
 //        double [] randoms = new double[n]; // иницилизация массива
 
         double[] randoms = new double[]{11, 2, 8, 0, 10}; // иницилизация
+
+
         int min = 0;
         int max = 0;
         double sum = 0;
@@ -33,17 +35,27 @@ public class Massiv_1 {
         }
         System.out.println("\n" + "min = " + randoms[min] + " [" + min + "] max = " + randoms[max] + " [" + max + "]");
 
+
+        // Вычисление произведение элементов между max и min
         if ((max - min == 1) | (max - min == -1)) {
             System.out.println("Два члена массива находятся рядом и их произведение невозможно высчитать");
         } else {
-            for (int i = min + 1; i < max; i++) {
-                multiply = multiply * randoms[i];
-                  }
-            System.out.println("Произведение " + multiply );
+            if (max < min) {
+                for (int i = max + 1; i < min; i++) {
+                    multiply = multiply * randoms[i];
+                }
+                System.out.println("Произведение " + multiply);
+            } else {
+                for (int i = min + 1; i < max; i++) {
+                    multiply = multiply * randoms[i];
+                }
+                System.out.println("Произведение " + multiply);
+            }
         }
-    }
+   }
+}
 
-    }
+
 
 
 
