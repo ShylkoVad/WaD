@@ -6,8 +6,7 @@ public class Massiv_1 {
 //        int n = 10; // длина массива
 //        double [] randoms = new double[n]; // иницилизация массива
 
-        double[] randoms = new double[]{11, 2, 8, 0, 10}; // иницилизация
-
+        double[] randoms = new double[]{10, -2, -3, 4, -5, 11}; // иницилизация
 
         int min = 0;
         int max = 0;
@@ -25,6 +24,7 @@ public class Massiv_1 {
         //           randoms[i] = Math.random(); // в каждый i элемент массива кладем рандомное значение
 //            System.out.print(randoms[i] + " ");
 
+// Нахождение max и min индексов массива
         for (int i = 0; i < randoms.length; i++) {
             if (randoms[i] > randoms[max]) { //вычисление индекса для max элемента
                 max = i;
@@ -37,6 +37,7 @@ public class Massiv_1 {
 
 
         // Вычисление произведение элементов между max и min
+        System.out.println("Вычисление произведения элементов вектора расположенных между min и max значениями массива:");
         if ((max - min == 1) | (max - min == -1)) {
             System.out.println("Два члена массива находятся рядом и их произведение невозможно высчитать");
         } else {
@@ -44,16 +45,39 @@ public class Massiv_1 {
                 for (int i = max + 1; i < min; i++) {
                     multiply = multiply * randoms[i];
                 }
-                System.out.println("Произведение " + multiply);
+                System.out.println("Произведение данных чисел составляет - " + multiply);
             } else {
                 for (int i = min + 1; i < max; i++) {
                     multiply = multiply * randoms[i];
                 }
-                System.out.println("Произведение " + multiply);
+                System.out.println("Произведение данных чисел составляет - " + multiply);
             }
         }
-   }
+
+//         Вычисление суммы отрицательных элементов векторы расположенных между min и max элементами массива
+        System.out.println("Вычисление суммы отрицательных элементов вектора расположенных между min и max значениями массива:");
+        if ((max - min == 1) | (max - min == -1)) {
+            System.out.println("Два члена массива находятся рядом и их сумму невозможно высчитать");
+        } else {
+            if (min < max) {
+                for (int i = min + 1; i < max; i++) {
+                    if (randoms[i] < 0) {
+                        sum = sum + randoms[i];
+                    }
+                }
+                System.out.println("Сумма данных чисел состовляет - " + sum);
+            } else {
+                for (int i = max + 1; i < min; i++) {
+                    if (randoms[i] < 0) {
+                        sum = sum + randoms[i];
+                    }
+                }
+                System.out.println("Сумма данных чисел состовляет - " + sum);
+            }
+        }
+    }
 }
+
 
 
 
