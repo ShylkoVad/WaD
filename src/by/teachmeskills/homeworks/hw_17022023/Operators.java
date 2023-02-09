@@ -6,15 +6,15 @@ public class Operators {
     public static void main(String[] args) {
         System.out.print("Введите значение длины квадратного отверстия a = ");
         Scanner scanner_a = new Scanner(System.in);
-        int a = scanner_a.nextInt();
+        double a = scanner_a.nextDouble();
 
         System.out.print("Введите значение ширины прямоугольного отверстия в мм. b = ");
         Scanner scanner_b = new Scanner(System.in);
-        int b = scanner_b.nextInt();
+        double b = scanner_b.nextDouble();
 
         System.out.print("Введите значение радиуса круглой картонки в мм. r = ");
         Scanner scanner_r = new Scanner(System.in);
-        int r = scanner_r.nextInt();
+        double r = scanner_r.nextDouble();
 
         double r_square = Math.sqrt(a * a + b * b) / 2;
 
