@@ -4,9 +4,8 @@ import java.util.Scanner;
 
 public class Operators {
     public static void main(String[] args) {
-//        System.out.print("Введите значение длины квадратного отверстия a = ");
+        System.out.print("Введите значение длины квадратного отверстия a = ");
         Scanner scanner_a = new Scanner(System.in);
-        System.out.print("Введите значение длины прямоугольного отверстия в мм. a = ");
         int a = scanner_a.nextInt();
 
         System.out.print("Введите значение ширины прямоугольного отверстия в мм. b = ");
