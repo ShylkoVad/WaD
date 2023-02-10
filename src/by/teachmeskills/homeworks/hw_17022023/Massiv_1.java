@@ -1,28 +1,29 @@
 package by.teachmeskills.homeworks.hw_17022023;
 
+import java.util.Arrays;
+
 public class Massiv_1 {
     public static void main(String[] args) {
 
 //        int n = 10; // длина массива
 //        double [] randoms = new double[n]; // иницилизация массива
 
-        double[] randoms = new double[]{10, -2, -3, 4, -5, 11}; // иницилизация
+        double[] randoms = new double[] {10, 2, 3, 4, 5, 11}; // иницилизация
+        System.out.println(Arrays.toString(randoms));
 
         int min = 0;
         int max = 0;
         double sum = 0;
         double multiply = 1;
 
-
         // i - переменная счетчик
         // randoms.length - длина массива
-        for (int i = 0; i < randoms.length; i++) {
-
-//            randoms[i] = Math.random(); // в каждый i элемент массива кладем рандомное значение
-            System.out.print(randoms[i] + " ");
-        }
-        //           randoms[i] = Math.random(); // в каждый i элемент массива кладем рандомное значение
+//        for (int i = 0; i < randoms.length; i++) {
+//
+////            randoms[i] = Math.random(); // в каждый i элемент массива кладем рандомное значение
 //            System.out.print(randoms[i] + " ");
+//        }
+
 
 // Нахождение max и min индексов массива
         for (int i = 0; i < randoms.length; i++) {
@@ -33,7 +34,7 @@ public class Massiv_1 {
                 min = i;
             }
         }
-        System.out.println("\n" + "min = " + randoms[min] + " [" + min + "] max = " + randoms[max] + " [" + max + "]");
+        System.out.println("min = " + randoms[min] + " [" + min + "] max = " + randoms[max] + " [" + max + "]");
 
 
         // Вычисление произведение элементов между max и min
