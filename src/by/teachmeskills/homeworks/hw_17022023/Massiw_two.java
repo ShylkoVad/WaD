@@ -14,12 +14,12 @@ import java.util.Scanner;
 
             int[][] randoms = new int[n][n]; // иницилизация массива
 
-            int unit = 1;
-            int zero = 0;
+//            int unit = 1;
+//            int zero = 0;
 
             for (int i = 0; i < randoms.length; i++) {
                 for (int j = 0; j < randoms.length; j++) {
-                    randoms[i][j] = (int) (Math.random() * (2000 + 1) - 1000); //рандомные числа от -1000 до 1000
+                    randoms[i][j] = (int) (Math.random() * (200 + 1) - 100); //рандомные числа от -100 до 100
                     System.out.print(randoms[i][j] + " ");
                 }
                 System.out.println();
@@ -27,10 +27,14 @@ import java.util.Scanner;
 
             for (int i = 0; i < randoms.length; i++) {
                 for (int j = 0; j < randoms.length; j++) {
-                    if (randoms[i][j] >= 0) {
-                        randoms[i][j] = zero;
+                    double a = randoms[i][j];
+                    double b = a / 2;
+                    int c = (int) a / 2;
+
+                    if (b == c) {
+                        randoms[i][j] = 0;
                     } else {
-                        randoms[i][j] = unit;
+                        randoms[i][j] = 1;
                     }
 
                     System.out.print(randoms[i][j] + " ");

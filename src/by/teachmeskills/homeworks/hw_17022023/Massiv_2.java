@@ -11,7 +11,7 @@ public class Massiv_2 {
 
 
         for (int i = 0; i < randoms.length; i++) {
-            randoms[i] =(int) (Math.random()*(2000+1)-1000); //рандомные числа от -1000 до 1000
+            randoms[i] =(int) (Math.random()*(200+1)-100); //рандомные числа от -100 до 100
                     }
         System.out.println("Вывод значений массива: " + "\n" + Arrays.toString(randoms));
 
@@ -27,7 +27,7 @@ public class Massiv_2 {
                 }
             }
         }
-        System.out.println("Вывод отсортированного массива: " + "\n" +Arrays.toString(randoms));
+        System.out.println( "\n" + "Вывод отсортированного массива: " + "\n" +Arrays.toString(randoms));
 
     }
 }
