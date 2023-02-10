@@ -5,11 +5,7 @@ import java.util.Arrays;
 public class Massiv_1 {
     public static void main(String[] args) {
 
-//        int n = 10; // длина массива
-//        double [] randoms = new double[n]; // иницилизация массива
-
-        double[] randoms = new double[] {10, 2, 3, 4, 5, 11}; // иницилизация
-        System.out.println(Arrays.toString(randoms));
+//     double[] randoms = new double[] {10, 2, 3, 4, 5, 11}; // иницилизация
 
         int min = 0;
         int max = 0;
@@ -18,12 +14,15 @@ public class Massiv_1 {
 
         // i - переменная счетчик
         // randoms.length - длина массива
-//        for (int i = 0; i < randoms.length; i++) {
-//
-////            randoms[i] = Math.random(); // в каждый i элемент массива кладем рандомное значение
-//            System.out.print(randoms[i] + " ");
-//        }
+        // при вводе длины массива и их значений необходимо закомментировать строки 18-22 и раскомментировать строку 8
+        int n = 5; // длина массива
+        double [] randoms = new double[n]; // иницилизация массива
+        for (int i = 0; i < randoms.length; i++) {
+        randoms[i] =(int) (Math.random()*(2000+1)-1000); //рандомные числа от -1000 до 1000
+        }
 
+        System.out.println("Вывод значений массива:");
+        System.out.println(Arrays.toString(randoms));
 
 // Нахождение max и min индексов массива
         for (int i = 0; i < randoms.length; i++) {
@@ -34,8 +33,7 @@ public class Massiv_1 {
                 min = i;
             }
         }
-        System.out.println("min = " + randoms[min] + " [" + min + "] max = " + randoms[max] + " [" + max + "]");
-
+        System.out.println("min = " + randoms[min] + " [" + min + "] max = " + randoms[max] + " [" + max + "]"); //Вывод max и min значения с индексом
 
         // Вычисление произведение элементов между max и min
         System.out.println("Вычисление произведения элементов вектора расположенных между min и max значениями массива:");
