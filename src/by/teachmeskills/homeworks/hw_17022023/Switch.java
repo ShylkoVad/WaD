@@ -2,7 +2,7 @@ package by.teachmeskills.homeworks.hw_17022023;
 
 public class Switch {
     public static void main(String[] args) {
-        int n = 10;
+        int n = 8;
 
 
         switch (n){
