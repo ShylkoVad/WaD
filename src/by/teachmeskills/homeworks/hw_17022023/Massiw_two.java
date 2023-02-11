@@ -2,9 +2,6 @@ package by.teachmeskills.homeworks.hw_17022023;
 
 import java.util.Scanner;
 
-
-
-
     public class Massiw_two {
         public static void main(String[] args) {
 
@@ -14,8 +11,7 @@ import java.util.Scanner;
 
             int[][] randoms = new int[n][n]; // иницилизация массива
 
-//            int unit = 1;
-//            int zero = 0;
+            System.out.println("Полученный рандомный двумерный массив размером " + n + "x" + n);
 
             for (int i = 0; i < randoms.length; i++) {
                 for (int j = 0; j < randoms.length; j++) {
@@ -24,6 +20,8 @@ import java.util.Scanner;
                 }
                 System.out.println();
             }
+
+            System.out.println("\nМасив после замены четных чисел на \"0\", а не четных на \"1\" выглядит следующим образом:");
 
             for (int i = 0; i < randoms.length; i++) {
                 for (int j = 0; j < randoms.length; j++) {
