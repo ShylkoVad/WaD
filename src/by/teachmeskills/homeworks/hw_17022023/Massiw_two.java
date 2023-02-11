@@ -25,11 +25,8 @@ import java.util.Scanner;
 
             for (int i = 0; i < randoms.length; i++) {
                 for (int j = 0; j < randoms.length; j++) {
-                    double a = randoms[i][j];
-                    double b = a / 2;
-                    int c = (int) a / 2;
 
-                    if (b == c) {
+                    if (randoms[i][j] % 2 == 0) {
                         randoms[i][j] = 0;
                     } else {
                         randoms[i][j] = 1;
@@ -40,7 +37,7 @@ import java.util.Scanner;
                 System.out.println();
             }
 
-//        System.out.println("Вывод значений массива: " + "\n" + Arrays.toString(randoms));
+
         }
 
     }
