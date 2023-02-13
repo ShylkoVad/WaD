@@ -23,11 +23,9 @@ public class Massiv_2 {
                     temp = randoms[j];
                     randoms[j] = randoms[j + 1];
                     randoms[j + 1] = temp;
-
                 }
             }
         }
         System.out.println( "\n" + "Вывод отсортированного массива: " + "\n" +Arrays.toString(randoms));
-
     }
 }
