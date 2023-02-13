@@ -7,4 +7,5 @@ public class WorksGit {
             int sum = a + b;
             System.out.printf("Sum of numbers " + a + " and " + b + " is " + sum);
         }
+
 }
