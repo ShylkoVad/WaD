@@ -18,11 +18,9 @@ public class Massiv_1 {
         int n = 5; // длина массива
         double[] randoms = new double[n]; // иницилизация массива
         for (int i = 0; i < randoms.length; i++) {
-        randoms[i] =(int) (Math.random()*(200+1)-100); //рандомные числа от -100 до 100
+            randoms[i] = (int) (Math.random() * (200 + 1) - 100); //рандомные числа от -100 до 100
         }
-
         System.out.println("Вывод значений массива: " + "\n" + Arrays.toString(randoms));
-
 // Нахождение max и min индексов массива
         for (int i = 0; i < randoms.length; i++) {
             if (randoms[i] > randoms[max]) { //вычисление индекса для max элемента
@@ -51,7 +49,6 @@ public class Massiv_1 {
                 System.out.println("Произведение данных чисел составляет - " + multiply);
             }
         }
-
 //         Вычисление суммы отрицательных элементов векторы расположенных между min и max элементами массива
         System.out.println("Вычисление суммы отрицательных элементов вектора расположенных между min и max значениями массива:");
         if ((max - min == 1) | (max - min == -1)) {
