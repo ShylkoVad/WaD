@@ -23,9 +23,7 @@ public class Massiw_torn {
                     randoms[i][j] = (int) (Math.random() * (200 + 1) - 100); //рандомные числа от -100 до 100
                     System.out.print(randoms[i][j] + " ");
                 }
-
             System.out.println();
         }
-
     }
 }
