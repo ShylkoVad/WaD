@@ -27,18 +27,18 @@ public class RecursionSorting_1 {
 //            System.out.println("Число A равно числу B");
 //        }
     }
-   static int sorting (int numberA; int numberB ) {
-       if (numberA )
-        return 0;
-       System.out.println(sorting(0));
+//   static int sorting (int numberA; int numberB ) {
+//       if (numberA )
+//        return 0;
+//       System.out.println(sorting(0));
 
 
     }
 
 
 
-    }
 
 
-}
+
+
 
