@@ -19,6 +19,16 @@ public class Inclusion {
         return scanner.nextInt();
     }
 
+    public void printOf () {
+        System.out.println(randomOf);
+        System.out.print("Ввести число 0 либо 1 для выключения компьютера: ");
+        if (on() == randomOf) {
+            System.out.println("Компьютер выключен");
+        } else {
+            System.out.println("Компьютер сгорел");
+        }
+    }
+
 
         public void printInt () {
         System.out.println(randomOn);
