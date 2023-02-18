@@ -12,7 +12,7 @@ public class Exsampl {
 //        System.out.println(myInclusion.getRandomOn());
 //        myInclusion.printInt();
 
-        myInclusion.printInt();
+        myInclusion.print();
 
 
 //       if (Inclusion.on() == myInclusion.getRandom()) {
