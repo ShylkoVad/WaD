@@ -4,27 +4,43 @@ import java.util.Scanner;
 
 public class Inclusion {
 
-    private int random = (int) (Math.random() * 2 ); //рандомные число от [0 до 1]
+    private int randomOn = (int) (Math.random() * 2); //рандомные число от [0 до 1]
+    private int randomOf = (int) (Math.random() * 2); //рандомные число от [0 до 1]
 
-    public int getRandom() {
-        return random;
+    public int getRandomOn() {
+        return randomOn;
     }
+
+    public int getRandomOf() {
+        return randomOf;
+    }
+
     // метод ввода числа
-    public int on () {
-        System.out.print("Ввести число 0 либо 1 для запуска компьютера: ");
+    public int on() {
         Scanner scanner = new Scanner(System.in);
         return scanner.nextInt();
     }
 
-
-        public void printInt () {
-//        System.out.println(random);
-
-        if (on() == random) {
-            System.out.println("Добро пожаловать в систему");
+    public void printOf() {
+        System.out.println(randomOf);
+        System.out.print("Ввести число 0 либо 1 для выключения компьютера: ");
+        if (on() == randomOf) {
+            System.out.println("Компьютер выключен");
         } else {
-            System.out.println("Комп сгорел");
+            System.out.println("Компьютер сгорел");
         }
     }
+
+    public void printOn() {
+        System.out.println(randomOn);
+        System.out.print("Ввести число 0 либо 1 для запуска компьютера: ");
+        if (on() == randomOn) {
+            System.out.println("Добро пожаловать в систему");
+            printOf();
+        } else {
+            System.out.println("Компьютер сгорел");
+        }
+    }
+
 }
 
