@@ -9,11 +9,8 @@ public class Inclusion {
     public int getRandom() {
         return random;
     }
-
     // метод ввода числа
     public int on () {
-
-
         System.out.print("Ввести число 0 либо 1 для запуска компьютера: ");
         Scanner scanner = new Scanner(System.in);
         return scanner.nextInt();
@@ -28,9 +25,6 @@ public class Inclusion {
         } else {
             System.out.println("Комп сгорел");
         }
-
-
     }
-
 }
 

@@ -14,7 +14,6 @@ public class Exsampl {
         System.out.println(myInclusion.getRandom());
 //        myInclusion.printInt();
 
-//        Inclusion.on();
         myInclusion.printInt();
 
 
