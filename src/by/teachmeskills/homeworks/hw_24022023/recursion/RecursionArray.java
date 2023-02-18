@@ -15,7 +15,6 @@ public class RecursionArray {
         }
         System.out.println("Вывод значений массива: " + "\n" + Arrays.toString(randoms));
 
-
         System.out.println("Сумма чисел массива : " + sum(randoms, 0));
     }
 
