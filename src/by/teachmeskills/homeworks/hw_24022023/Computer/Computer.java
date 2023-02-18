@@ -1,7 +1,7 @@
 package by.teachmeskills.homeworks.hw_24022023.Computer;
 
-
 public class Computer {
+
     // поля класса
     private String cpu; // тип процессора
     private int ram; // объем оперативной памяти

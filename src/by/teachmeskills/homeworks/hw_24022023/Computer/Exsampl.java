@@ -8,9 +8,5 @@ public class Exsampl {
 
         myComputer.characteristics(); // вызов метода characteristics у объекта myComputer
         myInclusion.printOn(); // вызов метода
-
-
     }
-
-
 }

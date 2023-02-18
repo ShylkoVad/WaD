@@ -13,7 +13,7 @@ public class Inclusion {
     }
 
     public void printOf() {
-        System.out.println(randomOf);
+//        System.out.println(randomOf);
         System.out.print("Ввести число 0 либо 1 для выключения компьютера: ");
         if (on() == randomOf) {
             System.out.println("Компьютер выключен");
@@ -23,17 +23,16 @@ public class Inclusion {
         }
     }
 
-    public void retry () {
+    public void retry() {
         System.out.print("Введите повторно 0 либо 1: ");
         on();
         System.out.println("Компьютер востановлению не подлежит");
         retry();
     }
 
-
     public void printOn() {
-        System.out.println(randomOn);
-        System.out.print("Ввести число 0 либо 1 для запуска компьютера: ");
+//        System.out.println(randomOn);
+        System.out.print("\nВвести число 0 либо 1 для запуска компьютера: ");
         if (on() == randomOn) {
             System.out.println("Добро пожаловать в систему");
             printOf();
@@ -43,4 +42,5 @@ public class Inclusion {
         }
     }
 }
+
 
