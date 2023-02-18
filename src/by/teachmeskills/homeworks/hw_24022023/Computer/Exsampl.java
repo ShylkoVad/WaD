@@ -1,7 +1,5 @@
 package by.teachmeskills.homeworks.hw_24022023.Computer;
 
-import java.util.Scanner;
-
 public class Exsampl {
     public static void main(String[] args) {
 
@@ -11,7 +9,7 @@ public class Exsampl {
        myComputer.characteristics(); // вызов метода characteristics у объекта myComputer (6)
 
 //        System.out.println(myInclusion.getInput());
-        System.out.println(myInclusion.getRandom());
+//        System.out.println(myInclusion.getRandomOn());
 //        myInclusion.printInt();
 
         myInclusion.printInt();
