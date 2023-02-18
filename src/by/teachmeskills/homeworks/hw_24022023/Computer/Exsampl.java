@@ -8,23 +8,7 @@ public class Exsampl {
 
        myComputer.characteristics(); // вызов метода characteristics у объекта myComputer (6)
 
-//        System.out.println(myInclusion.getInput());
-//        System.out.println(myInclusion.getRandomOn());
-//        myInclusion.printInt();
-
-        myInclusion.printInt();
-
-
-//       if (Inclusion.on() == myInclusion.getRandom()) {
-//           myInclusion.printInt(); // вызов метода у объекта Inclusion
-//           myComputer.characteristics(); // вызов метода characteristics у объекта myComputer (6)
-//       } else {
-//           System.out.println("Данные не доступны");
-//
-//           myInclusion.printInt(); // вызов метода у объекта Inclusion
-////           myComputer.characteristics(); // вызов метода characteristics у объекта myComputer (6)
-//
-//       }
+        myInclusion.printOn(); // вызов метода
 
 
     }
