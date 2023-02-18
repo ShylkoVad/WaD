@@ -20,12 +20,12 @@ public class Computer {
     }
 
     // метод вывода значений (3)
+
+
     public void characteristics() {
+
         System.out.printf("Данный компьютер обладает следующими характеристиками:\n 1.) CPU - %s;\n 2.) RAM - %d Гбайт;\n 3.) SSD - %d Гбайт\n", cpu, ram, ssd);
 //        System.out.printf("Вы ввели число:\n", input);
     }
-
-
-
 
 }

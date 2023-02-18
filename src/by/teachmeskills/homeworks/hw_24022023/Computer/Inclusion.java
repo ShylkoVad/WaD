@@ -12,6 +12,8 @@ public class Inclusion {
 
     // метод ввода числа
     public int on () {
+
+
         System.out.print("Ввести число 0 либо 1 для запуска компьютера: ");
         Scanner scanner = new Scanner(System.in);
         return scanner.nextInt();
@@ -19,6 +21,8 @@ public class Inclusion {
 
 
         public void printInt () {
+//        System.out.println(random);
+
         if (on() == random) {
             System.out.println("Добро пожаловать в систему");
         } else {

@@ -6,14 +6,16 @@ public class Exsampl {
     public static void main(String[] args) {
 
         Inclusion myInclusion = new Inclusion(); // создание объекта класса Inclusion
-               Computer myComputer = new Computer("Intel", 64, 1000); // Создаем объект класса (конкретный компьютер) (9)
+        Computer myComputer = new Computer("Intel", 64, 1000); // Создаем объект класса (конкретный компьютер) (9)
 
        myComputer.characteristics(); // вызов метода characteristics у объекта myComputer (6)
 
+//        System.out.println(myInclusion.getInput());
         System.out.println(myInclusion.getRandom());
+//        myInclusion.printInt();
+
 //        Inclusion.on();
         myInclusion.printInt();
-
 
 
 //       if (Inclusion.on() == myInclusion.getRandom()) {
