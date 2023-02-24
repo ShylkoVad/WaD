@@ -40,14 +40,14 @@ public class PassengerCar extends Ground {
     private int numberPassengersCar;
 
     private int time;
-//    private static double distance;
+
 
     public PassengerCar(int power, int speedMax, int weight, String brand, int numberWheels, int consumptionFuel, String typeBody, int numberPassengersCar, int time) {
         super(power, speedMax, weight, brand, numberWheels, consumptionFuel);
         this.typeBody = typeBody;
         this.numberPassengersCar = numberPassengersCar;
         this.time = time;
-//        this.distance = distance;
+
     }
 
     protected void typeBody() {
@@ -76,7 +76,7 @@ public class PassengerCar extends Ground {
 
     public static void main(String[] args) {
 
-        PassengerCar passengerCar = new PassengerCar(120, 150, 1500, "Skoda", 4, 8, "хэтчбек", 4, 3);
+        PassengerCar passengerCar = new PassengerCar(120, 150, 1500, "Skoda", 4, 8, "хэтчбек", 4, 4);
 
         System.out.println("Данный легковой автомобиль содежит следующие характеристики: ");
         passengerCar.weight();
