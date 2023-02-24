@@ -1,6 +1,6 @@
 package by.teachmeskills.homeworks.hw_03032023.animal;
 
-public class Lion extends Canine {
+public class Lion extends Feline {
 
     public Lion(String picture, String food, int hunger, Boundaries boundaries, Location location) {
         super(picture, food, hunger, boundaries, location);
