@@ -5,6 +5,19 @@ public class FreightCar extends Ground {
 
     protected FreightCar(int power, int speedMax, int weight, String brand, int numberWheels, int consumptionFuel) {
         super(power, speedMax, weight, brand, numberWheels, consumptionFuel);
+<<<<<<< HEAD
+    }
+
+    @Override
+    protected void numberWheels() {
+
+    }
+
+    @Override
+    protected void consumptionFuel() {
+
+=======
+>>>>>>> branch_24022023
     }
 
     @Override
@@ -16,6 +29,7 @@ public class FreightCar extends Ground {
     protected void consumptionFuel() {
 
     }
+
 
     @Override
     protected void power() {

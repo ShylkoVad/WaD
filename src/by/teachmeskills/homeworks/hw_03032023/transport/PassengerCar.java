@@ -47,6 +47,7 @@ public class PassengerCar extends Ground {
         this.typeBody = typeBody;
         this.numberPassengersCar = numberPassengersCar;
         this.time = time;
+
     }
 
     protected void typeBody() {
@@ -62,6 +63,7 @@ public class PassengerCar extends Ground {
         return powerWt;
     }
 
+
     protected double consumption() {
         double consumption = distance() * getConsumptionFuel() / 100;
         return consumption;
@@ -70,12 +72,12 @@ public class PassengerCar extends Ground {
     protected double distance() {
         double distance = getSpeedMax() * time;
         return distance;
-    }
 
+    }
     public static void main(String[] args) {
 
 
-        PassengerCar passengerCar = new PassengerCar(120, 150, 1500, "Skoda", 4, 8, "хэтчбек", 4, 3);
+        PassengerCar passengerCar = new PassengerCar(120, 150, 1500, "Skoda", 4, 8, "хэтчбек", 4, 4);
 
 
         System.out.println("Данный легковой автомобиль содежит следующие характеристики: ");
@@ -85,6 +87,7 @@ public class PassengerCar extends Ground {
         passengerCar.numberPassengersCar();
         passengerCar.power();
         passengerCar.consumptionFuel();
+
 
 
         System.out.println("За время " + passengerCar.time + " ч, автомобиль " + passengerCar.getBrand() + ", двигаясь с максимальной скоростью " + passengerCar.getSpeedMax() +
