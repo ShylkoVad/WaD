@@ -56,6 +56,7 @@ public abstract class Transport {
                 '}';
     }
 
+
     protected abstract void power();
 
     protected abstract void speedMax();

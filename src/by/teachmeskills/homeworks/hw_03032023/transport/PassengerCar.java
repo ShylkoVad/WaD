@@ -28,6 +28,7 @@ public class PassengerCar extends Ground {
 
     @Override
     protected void weight() {
+
         System.out.println("Масса составляет - " + getWeight() + " кг.;");
     }
 
@@ -38,15 +39,14 @@ public class PassengerCar extends Ground {
     private String typeBody;
     private int numberPassengersCar;
 
-    private static int time;
-    private static double distance;
+    private int time;
 
-    public PassengerCar(int power, int speedMax, int weight, String brand, int numberWheels, int consumptionFuel, String typeBody, int numberPassengersCar, int time, double distance) {
+
+    public PassengerCar(int power, int speedMax, int weight, String brand, int numberWheels, int consumptionFuel, String typeBody, int numberPassengersCar, int time) {
         super(power, speedMax, weight, brand, numberWheels, consumptionFuel);
         this.typeBody = typeBody;
         this.numberPassengersCar = numberPassengersCar;
         this.time = time;
-        this.distance = distance;
     }
 
     protected void typeBody() {
@@ -63,22 +63,20 @@ public class PassengerCar extends Ground {
     }
 
     protected double consumption() {
-        double consumption = distance * getConsumptionFuel() / 100;
+        double consumption = distance() * getConsumptionFuel() / 100;
         return consumption;
     }
 
-    @Override
-    public String toString() {
-        return "PassengerCar{" +
-                "typeBody='" + typeBody + '\'' +
-                ", numberPassengersCar=" + numberPassengersCar +
-                '}';
+    protected double distance() {
+        double distance = getSpeedMax() * time;
+        return distance;
     }
-
 
     public static void main(String[] args) {
 
-        PassengerCar passengerCar = new PassengerCar(100, 150, 1500, "Skoda", 4, 8, "хэтчбек", 5, 3, 500);
+
+        PassengerCar passengerCar = new PassengerCar(120, 150, 1500, "Skoda", 4, 8, "хэтчбек", 4, 3);
+
 
         System.out.println("Данный легковой автомобиль содежит следующие характеристики: ");
         passengerCar.weight();
@@ -87,8 +85,11 @@ public class PassengerCar extends Ground {
         passengerCar.numberPassengersCar();
         passengerCar.power();
         passengerCar.consumptionFuel();
-        System.out.println("За время " + time + " ч, автомобиль " + passengerCar.getBrand() + ", двигаясь с максимальной скоростью " + passengerCar.getSpeedMax() +
-                " км/ч пройдет " + distance + " км и израсходует " + passengerCar.consumption() + " литров топлива;" );
+
+
+        System.out.println("За время " + passengerCar.time + " ч, автомобиль " + passengerCar.getBrand() + ", двигаясь с максимальной скоростью " + passengerCar.getSpeedMax() +
+                " км/ч пройдет " + passengerCar.distance() + " км и израсходует " + passengerCar.consumption() + " литров топлива;");
+
     }
 
 

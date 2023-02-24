@@ -34,6 +34,7 @@ public abstract class Ground extends Transport {
     protected abstract void numberWheels();
     protected abstract void consumptionFuel();
 
+
     @Override
     public String toString() {
         return "Ground{" +

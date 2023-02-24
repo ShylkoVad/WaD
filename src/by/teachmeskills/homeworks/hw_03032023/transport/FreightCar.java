@@ -1,8 +1,20 @@
 package by.teachmeskills.homeworks.hw_03032023.transport;
 
 public class FreightCar extends Ground {
-    public FreightCar(int power, int speedMax, int weight, String brand) {
-        super(power, speedMax, weight, brand);
+
+
+    protected FreightCar(int power, int speedMax, int weight, String brand, int numberWheels, int consumptionFuel) {
+        super(power, speedMax, weight, brand, numberWheels, consumptionFuel);
+    }
+
+    @Override
+    protected void numberWheels() {
+
+    }
+
+    @Override
+    protected void consumptionFuel() {
+
     }
 
     @Override
@@ -24,16 +36,4 @@ public class FreightCar extends Ground {
     protected void brand() {
 
     }
-
-    @Override
-    protected void numberWheels() {
-
-    }
-
-    @Override
-    protected void consumptionFuel() {
-
-    }
-
-    private int loadCapacity;
 }
