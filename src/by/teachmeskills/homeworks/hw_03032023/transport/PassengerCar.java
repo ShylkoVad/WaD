@@ -31,13 +31,17 @@ public class PassengerCar extends Ground {
         System.out.println("Масса составляет - " + getWeight() + " кг.;");
     }
 
+//    @Override
+//    protected void weightWt(){
+//
+//    }
+
     @Override
     protected void brand() {
     }
 
     private String typeBody;
     private int numberPassengersCar;
-
     private int time;
 
 
@@ -57,10 +61,6 @@ public class PassengerCar extends Ground {
         System.out.println("Количество пассажиров - " + numberPassengersCar + " человек;");
     }
 
-    protected double powerWt() {
-        double powerWt = getPower() * 0.74;
-        return powerWt;
-    }
 
 
     protected double consumption() {
@@ -77,6 +77,7 @@ public class PassengerCar extends Ground {
 
 
         PassengerCar passengerCar = new PassengerCar(120, 150, 1500, "Skoda", 4, 8, "хэтчбек", 4, 4);
+
 
 
         System.out.println("Данный легковой автомобиль содежит следующие характеристики: ");

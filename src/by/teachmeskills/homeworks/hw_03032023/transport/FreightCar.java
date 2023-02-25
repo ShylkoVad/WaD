@@ -40,10 +40,6 @@ public class FreightCar extends Ground {
     protected void brand() {
     }
 
-    protected double powerWt() {
-        double powerWt = getPower() * 0.74;
-        return powerWt;
-    }
 
     private int loadCapacity;
     private int loadingWeight;

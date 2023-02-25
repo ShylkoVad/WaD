@@ -5,6 +5,7 @@ public abstract class Transport {
     private int power;
     private int speedMax;
     private int weight;
+    private boolean weightWt;
     private String brand;
 
     protected Transport(int power, int speedMax, int weight, String brand) {
@@ -12,6 +13,15 @@ public abstract class Transport {
         this.speedMax = speedMax;
         this.weight = weight;
         this.brand = brand;
+
+    }
+
+    public boolean isWeightWt() {
+        return weightWt;
+    }
+
+    public void setWeightWt(boolean weightWt) {
+        this.weightWt = weightWt;
     }
 
     public int getPower() {
@@ -52,9 +62,14 @@ public abstract class Transport {
 
     protected abstract void speedMax();
 
+
     protected abstract void weight();
 
     protected abstract void brand();
+    protected double powerWt() {
+        double powerWt = power * 0.74;
+        return powerWt;
+    }
 
 
 }

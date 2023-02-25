@@ -9,55 +9,50 @@ public class Civil extends Air {
     @Override
     protected void wingspan() {
         System.out.println("Размах крыльев - " + getWingspan() + " м.;");
-
     }
 
     @Override
     protected void runwayMin() {
         System.out.println("Минимальная длина взлетно-посадочной полосы - " + getRunwayMin() + " м.;");
-
     }
 
     @Override
     protected void power() {
-        System.out.println("Мощность - " + getPower() + " лошадиных сил ("  + " кВат.);");
-
+        System.out.println("Мощность - " + getPower() + " лошадиных сил ("  + powerWt() + " кВат.);");
     }
 
     @Override
     protected void speedMax() {
         System.out.println("Максимальная скорость - " + getSpeedMax() + " км/ч;");
-
     }
 
     @Override
     protected void weight() {
         System.out.println("Масса составляет - " + getWeight() + " кг.;");
-
     }
 
     @Override
     protected void brand() {
         System.out.println("Бренд - " + getBrand() + ";");
-
     }
     private int numberPassengersCivilMax;
-    private int numberPassengersCivi;
+    private int numberPassengersCivil;
     private boolean businessClass;
+
 
     public Civil(int power, int speedMax, int weight, String brand, double wingspan, int runwayMin, int numberPassengersCivilMax,int numberPassengersCivi, boolean businessClass) {
         super(power, speedMax, weight, brand, wingspan, runwayMin);
         this.numberPassengersCivilMax = numberPassengersCivilMax;
-        this.numberPassengersCivi = numberPassengersCivi;
+        this.numberPassengersCivil = numberPassengersCivi;
         this.businessClass = businessClass;
     }
 
     protected void setNumberPassengersCivil() {
         System.out.println("Максимальное количество пассажиров - " + numberPassengersCivilMax + " человек;");
-        if (numberPassengersCivi <= numberPassengersCivilMax) {
-            System.out.println("Число пасажиров " + numberPassengersCivi + " человек не привышает заявленые характеристики;");
+        if (numberPassengersCivil <= numberPassengersCivilMax) {
+            System.out.println("Число пасажиров " + numberPassengersCivil + " человек не привышает заявленые характеристики;");
         } else {
-            System.out.println("Число пасажиров " + numberPassengersCivi + " человек не соответствует заявленым характеристикам;");
+            System.out.println("Число пасажиров " + numberPassengersCivil + " человек не соответствует заявленым характеристикам;");
         }
     }
     protected void businessClass() {
