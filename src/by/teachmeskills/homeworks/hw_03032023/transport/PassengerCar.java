@@ -28,7 +28,6 @@ public class PassengerCar extends Ground {
 
     @Override
     protected void weight() {
-
         System.out.println("Масса составляет - " + getWeight() + " кг.;");
     }
 
