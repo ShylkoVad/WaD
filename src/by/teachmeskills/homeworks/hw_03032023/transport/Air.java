@@ -1,33 +1,34 @@
 package by.teachmeskills.homeworks.hw_03032023.transport;
 
 public abstract class Air extends Transport {
-    public Air(int power, int speedMax, int weight, String brand) {
+
+    protected Air(int power, int speedMax, int weight, String brand) {
         super(power, speedMax, weight, brand);
     }
+    private double wingspan;
+    private int runwayMin;
 
-    protected int wingspan;
-    protected int stripLengthMin;
-
-    public Air(int power, int speedMax, int weight, String brand, int stripLengthMin) {
+    public Air(int power, int speedMax, int weight, String brand, double wingspan, int runwayMin) {
         super(power, speedMax, weight, brand);
-        this.stripLengthMin = stripLengthMin;
+        this.wingspan = wingspan;
+        this.runwayMin = runwayMin;
     }
 
-    public int getWingspan() {
+    public double getWingspan() {
         return wingspan;
     }
 
-    public void setWingspan(int wingspan) {
+    public void setWingspan(double wingspan) {
         this.wingspan = wingspan;
     }
 
-    public int getStripLengthMin() {
-        return stripLengthMin;
+    public int getRunwayMin() {
+        return runwayMin;
     }
 
-    public void setStripLengthMin(int stripLengthMin) {
-        this.stripLengthMin = stripLengthMin;
+    public void setRunwayMin(int runwayMin) {
+        this.runwayMin = runwayMin;
     }
     protected abstract void wingspan();
-    protected abstract void stripLengthMin();
+    protected abstract void runwayMin();
 }

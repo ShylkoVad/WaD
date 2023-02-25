@@ -46,15 +46,6 @@ public abstract class Transport {
         this.brand = brand;
     }
 
-//    @Override
-//    public String toString() {
-//        return "Transport{" +
-//                "power=" + power +
-//                ", speedMax=" + speedMax +
-//                ", weight=" + weight +
-//                ", brand='" + brand + '\'' +
-//                '}';
-//    }
 
 
     protected abstract void power();
