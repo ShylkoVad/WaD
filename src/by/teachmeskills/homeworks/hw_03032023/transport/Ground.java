@@ -10,7 +10,7 @@ public abstract class Ground extends Transport {
     private int numberWheels;
     private int consumptionFuel;
 
-    protected Ground(int power, int speedMax, int weight, String brand, int numberWheels, int consumptionFuel) {
+    public Ground(int power, int speedMax, int weight, String brand, int numberWheels, int consumptionFuel) {
         super(power, speedMax, weight, brand);
         this.numberWheels = numberWheels;
         this.consumptionFuel = consumptionFuel;
@@ -34,5 +34,5 @@ public abstract class Ground extends Transport {
     protected abstract void numberWheels();
     protected abstract void consumptionFuel();
 
-
+//    protected abstract void weightWt();
 }
