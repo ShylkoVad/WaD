@@ -20,7 +20,7 @@ public class Run {
         IRobot robot2 = new Robot(new SonyHead(235), new SamsungHand(510), new ToshibaLeg(650));
         robot2.action();
         System.out.println("_________________________");
-        IRobot robot3 = new Robot(new ToshibaHead(178), new SonyHand(447), new SamsungLeg(745));
+        IRobot robot3 = new Robot(new ToshibaHead(378), new SonyHand(447), new SamsungLeg(745));
         robot3.action();
         System.out.println("_________________________");
 
