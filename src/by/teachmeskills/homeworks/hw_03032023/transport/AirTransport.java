@@ -1,15 +1,10 @@
 package by.teachmeskills.homeworks.hw_03032023.transport;
 
-public abstract class Air extends Transport {
-
-    protected Air(int power, int speedMax, int weight, String brand) {
-        super(power, speedMax, weight, brand);
-    }
+public class AirTransport {
     private double wingspan;
     private int runwayMin;
 
-    public Air(int power, int speedMax, int weight, String brand, double wingspan, int runwayMin) {
-        super(power, speedMax, weight, brand);
+    public AirTransport(double wingspan, int runwayMin) {
         this.wingspan = wingspan;
         this.runwayMin = runwayMin;
     }
@@ -29,6 +24,11 @@ public abstract class Air extends Transport {
     public void setRunwayMin(int runwayMin) {
         this.runwayMin = runwayMin;
     }
-    protected abstract void wingspan();
-    protected abstract void runwayMin();
+
+    protected void wingspan() {
+        System.out.println("Размах крыльев - " + wingspan + " м.;");
+    }
+    protected void runwayMin() {
+        System.out.println("Минимальная длина взлетно-посадочной полосы - " + runwayMin + " м.;");
+    }
 }
