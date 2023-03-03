@@ -1,10 +1,11 @@
 package by.teachmeskills.homeworks.hw_03032023.transport;
 
-public class FreightCar {
+public class FreightCar extends GroundTransport {
     private int loadCapacity;
     private int loadingWeight;
 
-    public FreightCar(int loadCapacity, int loadingWeight) {
+    public FreightCar(int power, int speedMax, String brand, int weight, int numberWheels, int consumptionFuel, int loadCapacity, int loadingWeight) {
+        super(power, speedMax, brand, weight, numberWheels, consumptionFuel);
         this.loadCapacity = loadCapacity;
         this.loadingWeight = loadingWeight;
     }
