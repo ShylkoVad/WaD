@@ -5,6 +5,8 @@ public class Main {
 
         StringUtils.returnsArithmeticExpression();
         StringUtils.replaceCharacter();
-        StringUtils.returnsTwoCharacters();
+        StringUtils.returnsTwoCharacters("good", "days");
+        StringUtils.palindrome("Око за око, зуб за зуб");
+        StringUtils.splitString("Метод split - делит строку на части");
     }
 }
