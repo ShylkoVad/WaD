@@ -14,7 +14,6 @@ public class StringUtils {
     }
 
     static void replaceCharacter() {
-
         StringBuilder expression = new StringBuilder("3 + 2 = 5");
         expression.deleteCharAt(6).insert(6, " равно ");
         System.out.println(expression);
@@ -28,7 +27,7 @@ public class StringUtils {
         System.out.println(str1);
     }
 
-    static void palindrome(String text) {
+    static void findPalindrome(String text) {
         text = text.replaceAll(",", "");
         String[] arrayText = text.split(" ");
         for (String str : arrayText) {
