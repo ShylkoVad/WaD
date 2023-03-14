@@ -1,14 +1,11 @@
 package by.teachmeskills.homeworks.hw_17032023.polyndromFile;
 
-import java.io.*;
-import java.lang.reflect.Array;
-import java.util.Arrays;
-import java.util.Scanner;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
 
-public class PolyndromFile {
+public class PalindromeFile {
     public static void main(String[] args) throws IOException {
-
-
         try (FileInputStream originalFile = new FileInputStream("data\\hw_1703\\OriginalFile.txt");
              FileOutputStream palindromeFile = new FileOutputStream("data\\hw_1703\\PalindromeFile.txt")) {
             byte[] buffer = originalFile.readAllBytes();
